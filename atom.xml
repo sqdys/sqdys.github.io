@@ -46,7 +46,7 @@
     <link href="http://sqdys.github.io.git/2019/11/28/Livere/"/>
     <id>http://sqdys.github.io.git/2019/11/28/Livere/</id>
     <published>2019-11-28T14:32:09.000Z</published>
-    <updated>2019-11-28T15:36:19.138Z</updated>
+    <updated>2019-11-29T06:03:56.585Z</updated>
     
     <content type="html"><![CDATA[<p>自从搭建了这个博客，就一直进行一些功能的完善，今天又看见了添加评论插件的方法，于是就看着网上的教程添加了Livere(来必力)评论插件。<br>韩国的Livere（来必力），可以支持多种类型的账号登录发言，比如 QQ、微信、微博、百度等账号登录发言，而且功能还比较强大，操作简单，植入到自己的博客里也比较轻松。<br>现在每篇博客下都可以评论了。<br>欢迎大家评论~~<br>参考链接：<a href="https://blog.csdn.net/qq_41923622/article/details/82966186" target="_blank" rel="noopener">https://blog.csdn.net/qq_41923622/article/details/82966186</a></p>]]></content>
     
@@ -61,6 +61,8 @@
     
     
     
+      <category term="Livere" scheme="http://sqdys.github.io.git/tags/Livere/"/>
+    
   </entry>
   
   <entry>
@@ -68,7 +70,7 @@
     <link href="http://sqdys.github.io.git/2019/11/28/Test-img/"/>
     <id>http://sqdys.github.io.git/2019/11/28/Test-img/</id>
     <published>2019-11-28T11:01:12.000Z</published>
-    <updated>2019-11-29T05:33:22.430Z</updated>
+    <updated>2019-11-29T06:04:07.314Z</updated>
     
     <content type="html"><![CDATA[<h3 id="以下是图片测试"><a href="#以下是图片测试" class="headerlink" title="以下是图片测试"></a>以下是图片测试</h3><img src="/2019/11/28/Test-img/1.jpg" width="270" height="585" alt><img src="/2019/11/28/Test-img/2.jpg"><img src="/2019/11/28/Test-img/3.jpg">]]></content>
     
@@ -82,6 +84,8 @@
     </summary>
     
     
+    
+      <category term="img" scheme="http://sqdys.github.io.git/tags/img/"/>
     
   </entry>
   
@@ -112,7 +116,7 @@
     <link href="http://sqdys.github.io.git/2019/11/27/hello-world/"/>
     <id>http://sqdys.github.io.git/2019/11/27/hello-world/</id>
     <published>2019-11-27T13:01:33.860Z</published>
-    <updated>2019-11-28T04:45:04.711Z</updated>
+    <updated>2019-11-29T06:04:21.889Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info.</p>]]></content>
     
@@ -126,6 +130,8 @@
     </summary>
     
     
+    
+      <category term="hexo" scheme="http://sqdys.github.io.git/tags/hexo/"/>
     
   </entry>
   
