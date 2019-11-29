@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sqdys.github.io.git/"/>
-  <updated>2019-11-29T13:20:37.565Z</updated>
+  <updated>2019-11-29T13:21:21.255Z</updated>
   <id>http://sqdys.github.io.git/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试视频播放</title>
+    <title>测试加入视频</title>
     <link href="http://sqdys.github.io.git/2019/11/29/Test-video/"/>
     <id>http://sqdys.github.io.git/2019/11/29/Test-video/</id>
     <published>2019-11-29T13:14:35.000Z</published>
-    <updated>2019-11-29T13:20:37.565Z</updated>
+    <updated>2019-11-29T13:21:21.255Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div><iframe style="width: 720px; height: 500px;" src="//player.bilibili.com/player.html?aid=75251412&cid=128724690&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>]]></content>
     
