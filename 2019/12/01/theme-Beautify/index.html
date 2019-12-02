@@ -402,13 +402,7 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <style type="text/css">
-  .h1{
-    text-align: center;
-    color: red;
-  }
-</style>
-<p>参考链接：<a href="https://blog.csdn.net/qq_36759224/article/details/85420403#font_colorFF0000___font_48" target="_blank" rel="noopener">https://blog.csdn.net/qq_36759224/article/details/85420403#font_colorFF0000___font_48</a><br>根据文章内容美化了主题。</p>
+        <p>参考链接：<a href="https://blog.csdn.net/qq_36759224/article/details/85420403#font_colorFF0000___font_48" target="_blank" rel="noopener">https://blog.csdn.net/qq_36759224/article/details/85420403#font_colorFF0000___font_48</a><br>根据文章内容美化了主题。</p>
 <h1 id="新增美化内容可能会导致移动端页面有卡顿现象"><a href="#新增美化内容可能会导致移动端页面有卡顿现象" class="headerlink" title="新增美化内容可能会导致移动端页面有卡顿现象"></a>新增美化内容可能会导致移动端页面有卡顿现象</h1><h2 id="添加鼠标点击爱心效果"><a href="#添加鼠标点击爱心效果" class="headerlink" title="添加鼠标点击爱心效果"></a>添加鼠标点击爱心效果</h2><p>在<code>...\themes\archer\source\scripts</code>下新建<code>love.js</code>,添加如下代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">!function(e,t,a)&#123;function n()&#123;c(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &#39;&#39;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;),o(),r()&#125;function r()&#123;for(var e&#x3D;0;e&lt;d.length;e++)d[e].alpha&lt;&#x3D;0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+&#x3D;.004,d[e].alpha-&#x3D;.013,d[e].el.style.cssText&#x3D;&quot;left:&quot;+d[e].x+&quot;px;top:&quot;+d[e].y+&quot;px;opacity:&quot;+d[e].alpha+&quot;;transform:scale(&quot;+d[e].scale+&quot;,&quot;+d[e].scale+&quot;) rotate(45deg);background:&quot;+d[e].color+&quot;;z-index:99999&quot;);requestAnimationFrame(r)&#125;function o()&#123;var t&#x3D;&quot;function&quot;&#x3D;&#x3D;typeof e.onclick&amp;&amp;e.onclick;e.onclick&#x3D;function(e)&#123;t&amp;&amp;t(),i(e)&#125;&#125;function i(e)&#123;var a&#x3D;t.createElement(&quot;div&quot;);a.className&#x3D;&quot;heart&quot;,d.push(&#123;el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()&#125;),t.body.appendChild(a)&#125;function c(e)&#123;var a&#x3D;t.createElement(&quot;style&quot;);a.type&#x3D;&quot;text&#x2F;css&quot;;try&#123;a.appendChild(t.createTextNode(e))&#125;catch(t)&#123;a.styleSheet.cssText&#x3D;e&#125;t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)&#125;function s()&#123;return&quot;rgb(&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;)&quot;&#125;var d&#x3D;[];e.requestAnimationFrame&#x3D;function()&#123;return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e)&#123;setTimeout(e,1e3&#x2F;60)&#125;&#125;(),n()&#125;(window,document);</span></pre></td></tr></table></figure>
 <p>然后在<code>...\themes\archer\layout\layout.ejs</code>中添加：</p>
@@ -432,7 +426,7 @@ height:50vh;
 <p>查看你的页面效果，如果没有出现，在上边代码前添加：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;http:&#x2F;&#x2F;libs.baidu.com&#x2F;jquery&#x2F;1.8.3&#x2F;jquery.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;http:&#x2F;&#x2F;libs.baidu.com&#x2F;jquery&#x2F;1.8.3&#x2F;jquery.min.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr></table></figure>
 <h2 id="背景添加动态线条效果"><a href="#背景添加动态线条效果" class="headerlink" title="背景添加动态线条效果"></a>背景添加动态线条效果</h2><h3 id="注意！需要把首页css中的背景图片或背景颜色删掉-如果有"><a href="#注意！需要把首页css中的背景图片或背景颜色删掉-如果有" class="headerlink" title="注意！需要把首页css中的背景图片或背景颜色删掉(如果有)"></a>注意！需要把首页css中的背景图片或背景颜色删掉(如果有)</h3><p>在<code>...\themes\archer\layout\layout.ejs</code>中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">color&#x3D;&quot;62,188,202&quot; opacity&#x3D;&#39;1&#39; zIndex&#x3D;&quot;-2&quot; count&#x3D;&quot;260&quot; src&#x3D;&quot;&#x2F;&#x2F;cdn.bootcss.com&#x2F;canvas-nest.js&#x2F;1.0.0&#x2F;canvas-nest.min.js&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;script&gt;</span></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">color&#x3D;&quot;62,188,202&quot; opacity&#x3D;&#39;1&#39; zIndex&#x3D;&quot;-2&quot; count&#x3D;&quot;100&quot; src&#x3D;&quot;&#x2F;&#x2F;cdn.bootcss.com&#x2F;canvas-nest.js&#x2F;1.0.0&#x2F;canvas-nest.min.js&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;script&gt;</span></pre></td></tr></table></figure>
 <p>其中：</p>
 <ul>
 <li>color：表示线条颜色，三个数字分别为(R,G,B)，默认：（0,0,0）</li>
@@ -441,6 +435,12 @@ height:50vh;
 <li>zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1</li>
 </ul>
 <p>最终效果：<br><img src="/2019/12/01/theme-Beautify/4.gif" alt></p>
+<style type="text/css">
+  .h1{
+    text-align: center;
+    color: red;
+  }
+</style>
 <h1 class="h1">谢谢观看~</h1> 
     </article>
     <!-- license  -->
@@ -449,7 +449,7 @@ height:50vh;
             <p>原文作者：<a href="http://sqdys.github.io.git">_Ys</a>
             <p>原文链接：<a href="http://sqdys.github.io.git/2019/12/01/theme-Beautify/">http://sqdys.github.io.git/2019/12/01/theme-Beautify/</a>
             <p>发表日期：<a href="http://sqdys.github.io.git/2019/12/01/theme-Beautify/">December 1st 2019, 12:27:03 pm</a>
-            <p>更新日期：<a href="http://sqdys.github.io.git/2019/12/01/theme-Beautify/">December 2nd 2019, 11:37:55 pm</a>
+            <p>更新日期：<a href="http://sqdys.github.io.git/2019/12/01/theme-Beautify/">December 2nd 2019, 11:55:52 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -787,6 +787,8 @@ top:50vh;
     
     
     
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
         Total : 9
@@ -814,6 +816,11 @@ top:50vh;
         </li>
     
     
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/29</span><a class="archive-post-title" href= "/2019/11/29/Test-video/" >测试加入视频</a>
+        </li>
+    
+    
     
     
     
@@ -835,11 +842,6 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">11/29</span><a class="archive-post-title" href= "/2019/11/29/Test-video/" >测试加入视频</a>
-        </li>
     
     
         <li class="archive-post-item">
@@ -871,19 +873,19 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="Livere"><span class="iconfont-archer">&#xe606;</span>Livere</span>
-    
         <span class="sidebar-tag-name" data-tags="音乐"><span class="iconfont-archer">&#xe606;</span>音乐</span>
     
-        <span class="sidebar-tag-name" data-tags="视频"><span class="iconfont-archer">&#xe606;</span>视频</span>
-    
-        <span class="sidebar-tag-name" data-tags="文字"><span class="iconfont-archer">&#xe606;</span>文字</span>
+        <span class="sidebar-tag-name" data-tags="Livere"><span class="iconfont-archer">&#xe606;</span>Livere</span>
     
         <span class="sidebar-tag-name" data-tags="图片"><span class="iconfont-archer">&#xe606;</span>图片</span>
     
         <span class="sidebar-tag-name" data-tags="live2d"><span class="iconfont-archer">&#xe606;</span>live2d</span>
     
+        <span class="sidebar-tag-name" data-tags="文字"><span class="iconfont-archer">&#xe606;</span>文字</span>
+    
         <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+    
+        <span class="sidebar-tag-name" data-tags="视频"><span class="iconfont-archer">&#xe606;</span>视频</span>
     
         <span class="sidebar-tag-name" data-tags="域名"><span class="iconfont-archer">&#xe606;</span>域名</span>
     
@@ -960,7 +962,7 @@ jsonContent:
     </body>
     <!--动态线条背景-->
 <script type="text/javascript"
-color="62,188,202" opacity='1' zIndex="-2" count="260" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+color="62,188,202" opacity='0.5' zIndex="-2" count="100" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script>
     <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/scripts/love.js"></script>
